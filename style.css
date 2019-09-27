@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+  }
+
+  li {
+      list-style: none;
+      padding-left: 70px;
+  }
+
+ h1 {
+     text-align: center;
+ }
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sally Student</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="sally-about">
+
+  </div>
+
+
+  <script src="https://unpkg.com/react@16/umd/react.development.js">
+  </script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+  </script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <script type="text/babel">
+function App(props) {
+  return (
+    <div>
+      {props.children}
+    </div>
+  );
+}
+
+// Nested elements inside the App
+
+  ReactDOM.render(
+    <div>
+    <header>
+      <h1>Sally Student</h1>
+      </header>
+      <address>111 Student Dr</address>
+      <main>
+      <p>I'm Sally Student! I like people, places, and things.</p>
+      <img className="sally-pic" src="https://ia.media-imdb.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_UX214_CR0,0,214,317_AL_.jpg"/>
+      <p>Please contact me @ <a href="mailto:mewmew@mew.com">my email</a></p>
+      <section>
+      <h3>Jobs</h3>
+        <ul>Job 1 Title at Job 1 Place</ul>
+        <li>2017-current</li>
+        <li>Cool stuff</li>
+        <li>even more neato stuff</li>
+        <li>mindblowing tasks</li>
+        <ul>Job 2 Title at Job 2 Place</ul>
+        <li>2015-2017</li>
+        <li>awesome stuff</li>
+        <li>even more exciting stuff</li>
+        <li>amazing tasks</li>
+      </section>
+      <section>
+      <h3>Education</h3>
+        <p>University of School, 2018</p>
+        </section>
+      </main>
+    </div>,
+    
+    document.querySelector('#sally-about')
+  );
+
+ 
+  </script>
+</body>
+
+</html>
